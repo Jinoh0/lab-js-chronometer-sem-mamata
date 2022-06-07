@@ -17,9 +17,7 @@ class Chronometer {
 
     // this.currentTime = setInterval((setStart) => {
     //   return this.intervalId++;      
-    // },1000)
-   
-    
+    // },1000)    
     // return printTimeCallback();
   }
 
@@ -67,9 +65,20 @@ class Chronometer {
     return this.computeTwoDigitNumber(this.getMinutes())+":"+this.computeTwoDigitNumber(this.getSeconds());        
   }
 }
-
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
 if (typeof module !== 'undefined') {
   module.exports = Chronometer;
 }
+
+//teste cpnsole.log
+
+// console.log(start())
+// console.log(stop())
+// console.log(computeTwoDigitNumber())
+// console.log(getMinutes())
+// console.log(getSeconds())
+// console.log(reset())
+// console.log(split())
+
+
