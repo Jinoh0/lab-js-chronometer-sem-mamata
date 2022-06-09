@@ -11,8 +11,10 @@ class Chronometer {
       // this.currentTime++;
       // let starttimer = this.currentTime++;
       // return setTime(starttimer);     
-      
-      return this.currentTime++
+      this.currentTime++
+      if (printTimeCallback) {
+        return printTimeCallback()
+      }
     },1000);
 
     // this.currentTime = setInterval((setStart) => {
@@ -28,12 +30,8 @@ class Chronometer {
   }
 
   getSeconds() {
-    // ... your code goes here
-    let seconds = Math.floor(this.currentTime);
-    if (seconds >= 60) {
-      return seconds%60;
-    }
-    return seconds;
+    // ... your code goes here   
+      return this.currentTime%60;   
   }
 
   computeTwoDigitNumber(value) {
